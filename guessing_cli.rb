@@ -1,1 +1,23 @@
 # Code your solution here!
+def exit_cli
+  puts "exit"
+end
+
+def run_guessing_game
+  input = ""
+  while input
+    puts "Guess a number between 1 and 10"
+    input = gets.chomp.downcase.strip
+    random_number = rands(1..10).to_s
+    if input = random_number
+      puts "You've guessed the right number!"
+    elsif input = "exit"
+        puts "Goodbye!"
+        break
+      else
+        puts "The computer guessed #{random_number}"
+      end
+    end
+  end
+
+              
