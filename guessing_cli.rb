@@ -5,9 +5,10 @@ def run_guessing_game
     puts "Guess a number between 1 and 10"
     input = gets.chomp.downcase.strip
     random_number = rands(1..10).to_s
-    if input = random_number
+    case input.chomp
+    when random_number
       puts "You've guessed the right number!"
-    elsif input = "exit"
+    when "exit"
         puts "Goodbye!"
         break
       else
