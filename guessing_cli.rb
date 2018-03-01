@@ -1,8 +1,4 @@
 # Code your solution here!
-def exit_cli
-  puts "exit"
-end
-
 def run_guessing_game
   input = ""
   while input
